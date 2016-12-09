@@ -1,0 +1,38 @@
+{
+  "name": "simple-flexbox-grid",
+  "version": "1.0.0",
+  "description": "Simple Flexbox Grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukasjuhas/simple-flexbox-grid.git"
+  },
+  "keywords": [
+    "flexbox",
+    "flex",
+    "grid",
+    "css",
+    "scss",
+    "sass"
+  ],
+  "author": "Lukas Juhas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukasjuhas/simple-flexbox-grid/issues"
+  },
+  "homepage": "https://github.com/lukasjuhas/simple-flexbox-grid#readme",
+  "devDependencies": {
+    "babel-core": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.5.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-if": "^2.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "yargs": "^6.5.0"
+  }
+}
