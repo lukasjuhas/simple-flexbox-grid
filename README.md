@@ -1,5 +1,5 @@
 # Simple Flexbox Grid
-Based on simple grid from awesome people @benchmarkstudios
+Based on simple grid from awesome people [@benchmarkstudios](https://github.com/benchmarkstudios)!
 
 ## Markup
 
@@ -101,7 +101,7 @@ To remove all the gutters from your columns just add the class `.row--gutterless
   </div>
 ```
 
-### row--reverse columns
+### Reverse columns
 Flexboox is awesome and so you can do things like making your columns reverse order. Just add the class `.row--reverse` to your `.row` element.
 
 ```html
