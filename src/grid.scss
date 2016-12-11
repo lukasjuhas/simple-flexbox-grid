@@ -44,6 +44,10 @@
   &.col--reverse {
     flex-direction: column-reverse;
   }
+
+  &.col--align-bottom {
+    align-self: flex-end;
+  }
 }
 
 @each $breakpoint in $breakpoints {

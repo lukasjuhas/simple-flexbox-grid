@@ -30,6 +30,8 @@
     padding-left: 0; }
   .col.col--reverse {
     flex-direction: column-reverse; }
+  .col.col--align-bottom {
+    align-self: flex-end; }
 
 @media only screen and (min-width: 1200px) {
   .col--lg-offset-0 {
