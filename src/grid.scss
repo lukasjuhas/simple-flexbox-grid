@@ -48,6 +48,22 @@
   &.col--align-bottom {
     align-self: flex-end;
   }
+
+  &.col--align-top {
+    align-self: flex-start;
+  }
+
+  &.col--align-center {
+    align-self: center;
+  }
+
+  &.col--align-baseline {
+    align-self: baseline;
+  }
+
+  &.col--align-stretch {
+    align-self: stretch;
+  }
 }
 
 @each $breakpoint in $breakpoints {

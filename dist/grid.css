@@ -32,6 +32,14 @@
     flex-direction: column-reverse; }
   .col.col--align-bottom {
     align-self: flex-end; }
+  .col.col--align-top {
+    align-self: flex-start; }
+  .col.col--align-center {
+    align-self: center; }
+  .col.col--align-baseline {
+    align-self: baseline; }
+  .col.col--align-stretch {
+    align-self: stretch; }
 
 @media only screen and (min-width: 1200px) {
   .col--lg-offset-0 {

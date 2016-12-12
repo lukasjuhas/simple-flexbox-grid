@@ -1,6 +1,6 @@
 {
   "name": "simple-flexbox-grid",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Simple Flexbox Grid",
   "main": "index.js",
   "scripts": {
