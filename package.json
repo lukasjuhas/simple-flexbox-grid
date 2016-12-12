@@ -2,7 +2,7 @@
   "name": "simple-flexbox-grid",
   "version": "0.3.0",
   "description": "Simple Flexbox Grid",
-  "main": "index.js",
+  "main": "src/grid.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
