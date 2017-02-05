@@ -1,4 +1,6 @@
 # Simple Flexbox Grid
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/lukasjuhas/simple-flexbox-grid.svg)](https://greenkeeper.io/)
 Based on simple grid from awesome people [@benchmarkstudios](https://github.com/benchmarkstudios)!
 
 ## Markup
