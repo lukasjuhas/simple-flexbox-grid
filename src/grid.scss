@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 .container {
   max-width: $grid-max-width;
@@ -12,13 +12,13 @@
 }
 
 .row {
-  box-sizing: border-box;
   display: flex;
+  box-sizing: border-box;
+  margin-left: -$grid-gutter;
+  list-style: none;
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  list-style: none;
-  margin-left: -$grid-gutter;
 
   &.row--gutterless {
     margin-left: 0;
@@ -30,12 +30,12 @@
 }
 
 .col {
-  padding-left: $grid-gutter;
+  max-width: 100%;
   box-sizing: border-box;
+  padding-left: $grid-gutter;
   flex: 0 0 auto;
   flex-grow: 1;
   flex-basis: 0;
-  max-width: 100%;
 
   .row--gutterless & {
     padding-left: 0;

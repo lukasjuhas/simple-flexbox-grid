@@ -1,10 +1,9 @@
 import gulp from 'gulp';
 import clean from 'gulp-clean';
 import sass from 'gulp-sass';
+import autoprefixer from 'gulp-autoprefixer';
 import rename from 'gulp-rename';
 import gulpif from 'gulp-if';
-import bump from 'gulp-bump';
-import { argv } from 'yargs';
 
 gulp.task('clean', () => (
   gulp.src('./dist/**/*', { read: false })
@@ -26,6 +25,10 @@ gulp.task('styles-min', () => (
     .pipe(sass({
       outputStyle: 'compressed',
     }).on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false,
+    }))
     .pipe(rename({
       suffix: '.min',
     }))
@@ -37,16 +40,6 @@ gulp.task('getversion', () => {
   return version;
 });
 
-gulp.task('bump', () => {
-  let type = 'patch';
-  if (argv.minor) type = 'minor';
-  if (argv.major) type = 'major';
-
-  return gulp.src('./package.json')
-    .pipe(bump({ type }))
-    .pipe(gulp.dest('./'));
-});
-
-gulp.task('build', ['clean', 'styles', 'bump']);
+gulp.task('build', ['clean', 'styles']);
 
 gulp.task('default', ['clean', 'styles']);
